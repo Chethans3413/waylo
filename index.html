@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waylo — Travel Like Local | Experiences, Treks & Local Walks</title>
+  <meta name="description" content="Waylo creates immersive travel experiences — local walks, treks, Pahad Pe Chai, and group journeys that go beyond the ordinary. Live like a local." />
+  <link rel="canonical" href="https://waylo.in" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700;800&family=Cabin+Sketch:wght@700&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════ -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__logo">
+    <a href="#home" id="logo-link">
+      <span class="navbar__logo-text">waylo</span><span class="navbar__logo-dot">.</span>
+    </a>
+  </div>
+  <ul class="navbar__links" role="list">
+    <li><a href="#experiences" class="navbar__link" id="nav-experiences">Experiences</a></li>
+    <li><a href="#trekpe-maggi" class="navbar__link" id="nav-trekpe-maggi">Trekpe Maggi</a></li>
+    <li><a href="#local-walks" class="navbar__link" id="nav-local-walks">Local Walks</a></li>
+    <li><a href="#schools" class="navbar__link" id="nav-for-schools-and-corporates">For Schools &amp; Corporates</a></li>
+    <li><a href="#local-hosts" class="navbar__link" id="nav-local-hosts">Local Hosts</a></li>
+    <li><a href="#about" class="navbar__link" id="nav-about-us">About Us</a></li>
+  </ul>
+  <a href="#contact" class="navbar__cta" id="nav-book-now">Book Now <span class="navbar__cta-arrow">↗</span></a>
+  <button class="navbar__hamburger" id="nav-hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Close menu">✕</button>
+  <ul>
+    <li><a href="#experiences" class="mobile-menu__link">Experiences</a></li>
+    <li><a href="#trekpe-maggi" class="mobile-menu__link">Trekpe Maggi</a></li>
+    <li><a href="#local-walks" class="mobile-menu__link">Local Walks</a></li>
+    <li><a href="#schools" class="mobile-menu__link">For Schools &amp; Corporates</a></li>
+    <li><a href="#local-hosts" class="mobile-menu__link">Local Hosts</a></li>
+    <li><a href="#about" class="mobile-menu__link">About Us</a></li>
+    <li><a href="#contact" class="mobile-menu__link mobile-menu__link--cta">Book Now ↗</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <img src="assets/images/hero_trekking.png" alt="Two trekkers walking up stone mountain trail with Himalayan scenery" class="hero__bg-img" loading="eager" />
+    <div class="hero__bg-overlay"></div>
+  </div>
+  <div class="hero__content">
+    <h1 class="hero__title">Travel like local<span class="hero__title-dot">.</span></h1>
+    <a href="#experiences" class="hero__cta" id="hero-book-experience">Book Your Experience <span class="hero__cta-arrow">→</span></a>
+  </div>
+  <svg class="hero__star" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+    <path d="M14 0 L15.8 12.2 L28 14 L15.8 15.8 L14 28 L12.2 15.8 L0 14 L12.2 12.2 Z" fill="white" fill-opacity="0.85"/>
+  </svg>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     BOREDOM SECTION
+════════════════════════════════════════════════ -->
+<section class="boredom">
+  <svg class="boredom__botanical boredom__botanical--tl" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+    <path d="M-20,10 Q100,50 180,180 T250,300" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none"/>
+    <path d="M100,50 Q180,10 250,60" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" fill="none"/>
+    <ellipse cx="140" cy="80" rx="35" ry="15" transform="rotate(-20 140 80)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <ellipse cx="80" cy="140" rx="40" ry="18" transform="rotate(45 80 140)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <circle cx="180" cy="180" r="18" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <circle cx="180" cy="180" r="5" fill="rgba(255,255,255,0.15)"/>
+  </svg>
+  <svg class="boredom__botanical boredom__botanical--br" viewBox="0 0 500 500" fill="none" aria-hidden="true">
+    <path d="M500,450 Q350,400 250,250 T150,100" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none"/>
+    <ellipse cx="320" cy="350" rx="45" ry="20" transform="rotate(-30 320 350)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="22" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <circle cx="250" cy="250" r="6" fill="rgba(255,255,255,0.15)"/>
+  </svg>
+  <div class="boredom__content">
+    <h2 class="boredom__heading reveal">Aren't you bored<br>of traveling the same?</h2>
+    <div class="boredom__subtext reveal" data-delay="0.2">
+      <p>The same crowded places.</p>
+      <p>The same food. The same experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     WHAT WE DO
+════════════════════════════════════════════════ -->
+<section class="whatwedo" id="about">
+  <svg class="whatwedo__botanical whatwedo__botanical--tr" viewBox="0 0 300 300" fill="none" aria-hidden="true">
+    <path d="M300,0 Q200,50 150,150 T50,300" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+    <ellipse cx="180" cy="100" rx="40" ry="15" transform="rotate(30 180 100)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <ellipse cx="140" cy="150" rx="30" ry="12" transform="rotate(45 140 150)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </svg>
+  <svg class="whatwedo__botanical whatwedo__botanical--bl" viewBox="0 0 250 350" fill="none" aria-hidden="true">
+    <path d="M0,350 Q80,250 120,180 T200,50" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+    <ellipse cx="60" cy="280" rx="35" ry="15" transform="rotate(-30 60 280)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  </svg>
+
+  <div class="whatwedo__container">
+    <div class="whatwedo__top">
+      <div class="whatwedo__top-left">
+        <div class="reveal">
+          <svg class="whatwedo__circle-logo" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+            <circle cx="60" cy="60" r="50" stroke="rgba(232,213,176,0.3)" stroke-width="0.8" stroke-dasharray="3 3"/>
+            <defs>
+              <path id="top-arc" d="M 20,60 A 40,40 0 0,1 100,60"/>
+              <path id="bot-arc" d="M 25,65 A 35,35 0 0,0 95,65"/>
+            </defs>
+            <text font-family="Inter, sans-serif" font-size="5.5" fill="rgba(232,213,176,0.6)" letter-spacing="3" font-weight="600">
+              <textPath href="#top-arc" startOffset="50%" text-anchor="middle">LIVE LIKE LOCAL</textPath>
+            </text>
+            <text font-family="Inter, sans-serif" font-size="5.5" fill="rgba(232,213,176,0.6)" letter-spacing="3" font-weight="600">
+              <textPath href="#bot-arc" startOffset="50%" text-anchor="middle">EXPERIENCES</textPath>
+            </text>
+            <text x="60" y="60" text-anchor="middle" dominant-baseline="middle" font-family="'Caveat', cursive" font-size="36" font-weight="400" fill="#e8d5b0" transform="rotate(-5 60 60)">Waylo.</text>
+          </svg>
+        </div>
+        <h2 class="whatwedo__heading reveal" data-delay="0.1">WHAT<br>WE DO.</h2>
+        <p class="whatwedo__sublabel reveal" data-delay="0.15">EXPERIENCES, NOT JUST DESTINATIONS.</p>
+        <div class="whatwedo__body reveal" data-delay="0.2">
+          <p>At Waylo, we believe travel is not about ticking off places, it's about living a story.</p>
+          <p>We take you beyond the usual, to the heart of a place, through its people, culture, traditions, food and everyday life.</p>
+          <p>From hidden trails and local walks to midnight Maggi on a mountain top, bike rallies, and soulful conversations with locals – we create experiences that stay with you long after the trip ends.</p>
+          <p>We also empower local hosts by creating meaningful opportunities, because when they grow, the places we love grow too.</p>
+        </div>
+        <p class="whatwedo__tagline reveal" data-delay="0.3">Travel deeper. Connect stronger.<br>Live like local.</p>
+      </div>
+      <div class="whatwedo__top-right">
+        <div class="whatwedo__main-photo-wrap reveal" data-delay="0.2">
+          <div class="whatwedo__offset-border"></div>
+          <img src="assets/images/trekkers_mountain.png" class="whatwedo__photo-img" alt="Trekkers" />
+        </div>
+      </div>
+    </div>
+
+    <div class="whatwedo__features-section reveal" data-delay="0.35">
+      <p class="whatwedo__features-label">WE TAKE YOU TO</p>
+      <div class="whatwedo__features-grid">
+        <div class="whatwedo__feature" id="feat-local-exp">
+          <div class="whatwedo__feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 24 L24 10 L40 24" stroke="#c4a55a" stroke-width="1.2" fill="none"/><rect x="12" y="24" width="24" height="16" stroke="#c4a55a" stroke-width="1.2" fill="none"/><rect x="20" y="30" width="8" height="10" stroke="#c4a55a" stroke-width="1" fill="none"/></svg>
+          </div>
+          <h3 class="whatwedo__feature-title">Local Experiences</h3>
+          <p class="whatwedo__feature-desc">Walk the local lanes, explore hidden gems and live the culture, like a local.</p>
+        </div>
+        <div class="whatwedo__feature" id="feat-adventures">
+          <div class="whatwedo__feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 38 L16 16 L26 30 L32 20 L42 38 Z" stroke="#c4a55a" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3 class="whatwedo__feature-title">Unique Adventures</h3>
+          <p class="whatwedo__feature-desc">From treks to bike rallies and our famous Trekpe Maggi, we do adventures differently.</p>
+        </div>
+        <div class="whatwedo__feature" id="feat-local-hosts">
+          <div class="whatwedo__feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="14" r="5" stroke="#c4a55a" stroke-width="1.2" fill="none"/><path d="M6 38 C6 30 26 30 26 38" stroke="#c4a55a" stroke-width="1.2" fill="none"/><circle cx="32" cy="18" r="4" stroke="#c4a55a" stroke-width="1" fill="none"/><path d="M24 38 C24 32 40 32 40 38" stroke="#c4a55a" stroke-width="1" fill="none"/></svg>
+          </div>
+          <h3 class="whatwedo__feature-title">Local Hosts</h3>
+          <p class="whatwedo__feature-desc">We work with local hosts who know their land best and open doors to authentic experiences.</p>
+        </div>
+        <div class="whatwedo__feature" id="feat-groups">
+          <div class="whatwedo__feature-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="12" r="5" stroke="#c4a55a" stroke-width="1.2" fill="none"/><path d="M14 36 C14 28 34 28 34 36" stroke="#c4a55a" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3 class="whatwedo__feature-title">Groups &amp; Communities</h3>
+          <p class="whatwedo__feature-desc">For schools, corporates and groups, we design meaningful journeys that build connection.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatwedo__promise-row reveal" data-delay="0.4">
+      <div class="whatwedo__promise-photo-wrap left-photo">
+        <div class="whatwedo__offset-border top-right-offset"></div>
+        <img src="assets/images/village_trek.png" class="whatwedo__photo-img" alt="Village" />
+      </div>
+      <div class="whatwedo__promise-text">
+        <h3 class="whatwedo__promise-title">OUR PROMISE</h3>
+        <p>We don't do crowded. We don't do ordinary. We do real, raw and remarkable.</p>
+        <p>Every experience is curated with care, respect and a deep love for the places and the people.</p>
+      </div>
+      <div class="whatwedo__promise-photo-wrap right-photo">
+        <div class="whatwedo__offset-border top-left-offset"></div>
+        <img src="assets/images/campfire_night.png" class="whatwedo__photo-img" alt="Campfire" />
+      </div>
+    </div>
+
+    <div class="whatwedo__closing reveal" data-delay="0.5">
+      <div class="whatwedo__quote-block">
+        <p class="whatwedo__quote">
+          <span class="whatwedo__quote-mark">"</span>Collect stories,<br><span class="whatwedo__quote-indent">not souvenirs.</span><span class="whatwedo__quote-mark">"</span>
+        </p>
+        <svg class="whatwedo__quote-scribble" viewBox="0 0 100 20" fill="none">
+          <path d="M10,10 Q30,0 50,15 T90,5" stroke="#c4a55a" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+      <div class="whatwedo__signoff-block">
+        <p class="whatwedo__signoff-label">WAYLO</p>
+        <p class="whatwedo__signoff-text">Because the best journeys are not measured in miles, but in moments that make you feel alive.</p>
+        <p class="whatwedo__signoff-name">Waylo <span class="whatwedo__heart">♡</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SIGNATURE EXPERIENCES
+════════════════════════════════════════════════ -->
+<section class="sigexp" id="experiences">
+  <svg class="sigexp__botanical sigexp__botanical--tl" viewBox="0 0 140 180" fill="none" aria-hidden="true">
+    <path d="M0 180 Q30 120 50 70 Q60 35 70 0" stroke="rgba(196,165,90,0.18)" stroke-width="1.2" fill="none"/>
+    <ellipse cx="70" cy="0" rx="22" ry="9" transform="rotate(-40 70 0)" stroke="rgba(196,165,90,0.14)" stroke-width="1" fill="none"/>
+    <ellipse cx="52" cy="68" rx="20" ry="8" transform="rotate(-25 52 68)" stroke="rgba(196,165,90,0.12)" stroke-width="1" fill="none"/>
+  </svg>
+  <svg class="sigexp__botanical sigexp__botanical--tr" viewBox="0 0 140 180" fill="none" aria-hidden="true">
+    <path d="M140 180 Q110 120 90 70 Q80 35 70 0" stroke="rgba(196,165,90,0.18)" stroke-width="1.2" fill="none"/>
+    <ellipse cx="70" cy="0" rx="22" ry="9" transform="rotate(40 70 0)" stroke="rgba(196,165,90,0.14)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="sigexp__header reveal">
+    <p class="sigexp__eyebrow">EXPERIENCES THAT STAY WITH YOU</p>
+    <h2 class="sigexp__title">Our Signature Experiences</h2>
+    <p class="sigexp__subtitle">Handpicked journeys that go beyond the usual.<br>Live the stories. Feel the places. Take the memories.</p>
+    <div class="sigexp__divider" aria-hidden="true">
+      <svg viewBox="0 0 80 16" fill="none"><path d="M5 8 Q20 4 40 8 Q60 12 75 8" stroke="rgba(196,165,90,0.5)" stroke-width="0.8" fill="none"/><circle cx="40" cy="8" r="2.5" fill="rgba(196,165,90,0.5)"/></svg>
+    </div>
+  </div>
+
+  <div class="sigexp__cards">
+    <!-- Card 1: June Itineraries -->
+    <div class="sigexp__card reveal" data-delay="0.15" id="card-june">
+      <div class="sigexp__card-img-wrap">
+        <img src="assets/images/june_itineraries.png" alt="Group trekking on lush green Himachal hills" class="sigexp__card-img"/>
+        <div class="sigexp__card-img-overlay"></div>
+        <div class="sigexp__card-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M2 20 L8 8 L14 14 L17 9 L22 20Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+      </div>
+      <div class="sigexp__card-body">
+        <h3 class="sigexp__card-title">June Itineraries</h3>
+        <p class="sigexp__card-location"><span class="sigexp__pin">📍</span> Himachal &amp; Uttarakhand</p>
+        <p class="sigexp__card-desc">Perfect weather. Lush trails. Local stories.<br>Step into the mountains this June.</p>
+        <div class="sigexp__card-stats">
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Duration</span><span class="sigexp__stat-val">🕒 3N / 4D</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Difficulty</span><span class="sigexp__stat-val">📊 Moderate</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Best For</span><span class="sigexp__stat-val">👥 Friends, Couples</span></div>
+        </div>
+        <div class="sigexp__card-footer">
+          <div><p class="sigexp__price-label">Starting from</p><p class="sigexp__price">₹7,999</p></div>
+          <a href="#contact" class="sigexp__arrow" aria-label="Book June Itineraries">→</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: Trek Pe Maggie -->
+    <div class="sigexp__card reveal" data-delay="0.27" id="card-maggi">
+      <div class="sigexp__card-img-wrap">
+        <img src="assets/images/trekpe_maggi.png" alt="Friends around campfire at high altitude sunset" class="sigexp__card-img"/>
+        <div class="sigexp__card-img-overlay"></div>
+        <div class="sigexp__card-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="2" rx="1" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M6 10 L7 20 L17 20 L18 10" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        </div>
+      </div>
+      <div class="sigexp__card-body">
+        <h3 class="sigexp__card-title" id="trekpe-maggi">Trek Pe Maggie</h3>
+        <p class="sigexp__card-location"><span class="sigexp__pin">📍</span> High Altitude Treks</p>
+        <p class="sigexp__card-desc">Maggi at 2 AM. Stars above.<br>Sunrise that stays forever.</p>
+        <div class="sigexp__card-stats">
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Duration</span><span class="sigexp__stat-val">🕒 2N / 3D</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Difficulty</span><span class="sigexp__stat-val">📊 Moderate</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Best For</span><span class="sigexp__stat-val">👥 Adventure Seekers</span></div>
+        </div>
+        <div class="sigexp__card-footer">
+          <div><p class="sigexp__price-label">Starting from</p><p class="sigexp__price">₹6,499</p></div>
+          <a href="#contact" class="sigexp__arrow" aria-label="Book Trek Pe Maggie">→</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: Pahad Pe Chai -->
+    <div class="sigexp__card reveal" data-delay="0.39" id="card-chai">
+      <div class="sigexp__card-img-wrap">
+        <img src="assets/images/pahad_chai.png" alt="Silhouettes at golden mountain sunset with tea" class="sigexp__card-img"/>
+        <div class="sigexp__card-img-overlay"></div>
+        <div class="sigexp__card-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 8 L5 16 Q5 19 8 19 L16 19 Q19 19 19 16 L19 8 Z" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M19 10 Q22 10 22 13 Q22 16 19 15" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+        </div>
+      </div>
+      <div class="sigexp__card-body">
+        <h3 class="sigexp__card-title">Pahad Pe Chai</h3>
+        <p class="sigexp__card-location"><span class="sigexp__pin">📍</span> Hidden Mountain Spots</p>
+        <p class="sigexp__card-desc">Chai, conversation and the calm<br>the mountains generously give.</p>
+        <div class="sigexp__card-stats">
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Duration</span><span class="sigexp__stat-val">🕒 1N / 2D</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Difficulty</span><span class="sigexp__stat-val">📊 Easy</span></div>
+          <div class="sigexp__stat"><span class="sigexp__stat-label">Best For</span><span class="sigexp__stat-val">👥 Everyone</span></div>
+        </div>
+        <div class="sigexp__card-footer">
+          <div><p class="sigexp__price-label">Starting from</p><p class="sigexp__price">₹3,299</p></div>
+          <a href="#contact" class="sigexp__arrow" aria-label="Book Pahad Pe Chai">→</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="sigexp__closing reveal" data-delay="0.7">✦ Live Like Local. Experience Waylo.</p>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     TREK EXPLORE
+════════════════════════════════════════════════ -->
+<section class="texplore" id="trek-explore">
+  <svg class="texplore__mountains" viewBox="0 0 1200 140" fill="none" aria-hidden="true">
+    <path d="M0 140 L80 60 L160 100 L260 20 L360 80 L480 10 L600 70 L720 15 L840 75 L960 25 L1080 80 L1200 40 L1200 140Z" stroke="rgba(196,165,90,0.08)" stroke-width="1" fill="rgba(196,165,90,0.025)"/>
+  </svg>
+  <svg class="texplore__botanical texplore__botanical--tl" viewBox="0 0 120 200" fill="none" aria-hidden="true">
+    <path d="M10 200 Q30 140 20 80 Q12 30 40 0" stroke="rgba(196,165,90,0.15)" stroke-width="1.2" fill="none"/>
+    <ellipse cx="40" cy="0" rx="20" ry="8" transform="rotate(-40 40 0)" stroke="rgba(196,165,90,0.12)" stroke-width="1" fill="none"/>
+  </svg>
+  <svg class="texplore__botanical texplore__botanical--br" viewBox="0 0 120 200" fill="none" aria-hidden="true">
+    <path d="M110 200 Q90 140 100 80 Q108 30 80 0" stroke="rgba(196,165,90,0.15)" stroke-width="1.2" fill="none"/>
+    <ellipse cx="80" cy="0" rx="20" ry="8" transform="rotate(40 80 0)" stroke="rgba(196,165,90,0.12)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="texplore__grid">
+    <div class="texplore__col reveal" id="col-trek">
+      <div class="texplore__icon" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none"><path d="M5 72 L22 32 L38 52 L46 36 L62 52 L75 28 L75 72 Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+      </div>
+      <h2 class="texplore__title">Trek</h2>
+      <svg class="texplore__ornament" viewBox="0 0 70 14" fill="none"><path d="M5 7 Q18 3 35 7 Q52 11 65 7" stroke="currentColor" stroke-width="0.8" fill="none"/><circle cx="35" cy="7" r="2" fill="currentColor"/></svg>
+      <p class="texplore__desc">Handpicked treks that take you beyond the ordinary. From hidden trails to breathtaking summits, every step is an unforgettable story.</p>
+    </div>
+    <div class="texplore__col reveal" data-delay="0.18" id="col-experience">
+      <div class="texplore__icon" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none"><path d="M40 18 C35 28 28 32 30 44 C32 52 40 58 40 58 C40 58 48 52 50 44 C52 32 45 28 40 18Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M20 65 L60 65" stroke="currentColor" stroke-width="1.5"/><path d="M25 65 L40 58" stroke="currentColor" stroke-width="1.2"/><path d="M55 65 L40 58" stroke="currentColor" stroke-width="1.2"/></svg>
+      </div>
+      <h2 class="texplore__title">Experience</h2>
+      <svg class="texplore__ornament" viewBox="0 0 70 14" fill="none"><path d="M5 7 Q18 3 35 7 Q52 11 65 7" stroke="currentColor" stroke-width="0.8" fill="none"/><circle cx="35" cy="7" r="2" fill="currentColor"/></svg>
+      <p class="texplore__desc">More than just a trek. It's the people you meet, the cultures you discover, and the moments that stay with you long after the journey ends.</p>
+    </div>
+    <div class="texplore__col reveal" data-delay="0.36" id="col-explore">
+      <div class="texplore__icon" aria-hidden="true">
+        <svg viewBox="0 0 80 80" fill="none"><rect x="18" y="22" width="44" height="46" rx="6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M28 22 Q28 14 40 14 Q52 14 52 22" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="26" y="36" width="28" height="18" rx="4" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+      </div>
+      <h2 class="texplore__title">Explore</h2>
+      <svg class="texplore__ornament" viewBox="0 0 70 14" fill="none"><path d="M5 7 Q18 3 35 7 Q52 11 65 7" stroke="currentColor" stroke-width="0.8" fill="none"/><circle cx="35" cy="7" r="2" fill="currentColor"/></svg>
+      <p class="texplore__desc">Offbeat places. Raw nature. Real adventures. We take you to the unexplored, so you can experience the world the way it's meant to be.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     LOCAL WALKS
+════════════════════════════════════════════════ -->
+<section class="localwalks" id="local-walks">
+  <svg class="localwalks__bg-element localwalks__bg-tl" viewBox="0 0 200 300" fill="none">
+    <path d="M-20 280 Q60 200 40 100 Q30 50 80 -10" stroke="rgba(196,165,90,0.15)" stroke-width="1" fill="none"/>
+    <ellipse cx="75" cy="105" rx="20" ry="6" transform="rotate(-30 75 105)" stroke="rgba(196,165,90,0.1)" stroke-width="0.8" fill="none"/>
+  </svg>
+  <svg class="localwalks__bg-element localwalks__bg-br" viewBox="0 0 300 400" fill="none">
+    <path d="M350 350 Q200 250 250 100 Q270 20 180 -50" stroke="rgba(196,165,90,0.15)" stroke-width="1" fill="none"/>
+    <ellipse cx="190" cy="110" rx="25" ry="8" transform="rotate(35 190 110)" stroke="rgba(196,165,90,0.1)" stroke-width="0.8" fill="none"/>
+  </svg>
+
+  <div class="localwalks__header reveal">
+    <div class="localwalks__title-container">
+      <div class="localwalks__title-wrapper">
+        <svg class="localwalks__title-oval" viewBox="0 0 300 120" preserveAspectRatio="none">
+          <path d="M150,10 C240,5 290,30 285,60 C280,95 210,115 140,110 C60,105 15,80 20,45 C25,15 90,5 160,15" stroke="rgba(180,80,40,0.8)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <h2 class="localwalks__title">WALKS</h2>
+      </div>
+      <p class="localwalks__tagline">Local paths. Real stories.</p>
+    </div>
+    <div class="localwalks__header-desc">
+      <svg class="localwalks__swirl" viewBox="0 0 100 100" fill="none">
+        <path d="M50 20 L50 30 M50 70 L50 80 M20 50 L30 50 M70 50 L80 50 M30 30 L38 38 M62 62 L70 70 M30 70 L38 62 M62 38 L70 30" stroke="rgba(180,80,40,0.8)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <p class="localwalks__header-text">Our walks take you through<br>local trails, timeless tales<br>and everyday magic.</p>
+    </div>
+  </div>
+
+  <div class="localwalks__rows">
+    <!-- Walk 1: Hidden Forest Walk -->
+    <div class="localwalks__row localwalks__row--left reveal" data-delay="0.15" id="walk-forest">
+      <div class="localwalks__photo-wrap">
+        <div class="localwalks__photo">
+          <img src="assets/images/forest_walk.png" alt="Hidden Forest Walk"/>
+        </div>
+        <svg class="localwalks__scribble localwalks__scribble--left" viewBox="0 0 80 50" fill="none">
+          <path d="M10 40 Q30 10 50 35 T70 10" stroke="rgba(180,80,40,0.8)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="localwalks__text-container">
+        <div class="localwalks__text-header">
+          <svg viewBox="0 0 40 40" fill="none" class="localwalks__item-icon"><path d="M20 5 C12 5 8 13 8 19 C8 26 20 35 20 35 C20 35 32 26 32 19 C32 13 28 5 20 5 Z" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="20" cy="17" r="4" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          <h3 class="localwalks__walk-title">Hidden Forest Walk</h3>
+        </div>
+        <p class="localwalks__walk-desc">Walk through ancient forest paths known only to locals, where every turn holds a story from the past.</p>
+      </div>
+    </div>
+
+    <!-- Walk 2: Local Flavours -->
+    <div class="localwalks__row localwalks__row--right reveal" data-delay="0.3" id="walk-food">
+      <div class="localwalks__photo-wrap">
+        <div class="localwalks__photo">
+          <img src="assets/images/local_food.png" alt="Local Flavours"/>
+        </div>
+        <svg class="localwalks__scribble localwalks__scribble--right" viewBox="0 0 80 50" fill="none">
+          <path d="M10 10 Q30 40 50 15 T70 40" stroke="rgba(180,80,40,0.8)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="localwalks__text-container">
+        <div class="localwalks__text-header">
+          <svg viewBox="0 0 40 40" fill="none" class="localwalks__item-icon"><path d="M10 20 L28 20 C28 26 22 30 19 30 C16 30 10 26 10 20 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          <h3 class="localwalks__walk-title">Local Flavours</h3>
+        </div>
+        <p class="localwalks__walk-desc">Taste the heart of the region with home-style food, local ingredients and recipes passed down for generations.</p>
+      </div>
+    </div>
+
+    <!-- Walk 3: Local Places -->
+    <div class="localwalks__row localwalks__row--left reveal" data-delay="0.45" id="walk-village">
+      <div class="localwalks__photo-wrap">
+        <div class="localwalks__photo">
+          <img src="assets/images/mountain_village.png" alt="Local Places"/>
+        </div>
+        <svg class="localwalks__scribble localwalks__scribble--left" viewBox="0 0 80 50" fill="none">
+          <path d="M10 40 Q30 10 50 35 T70 10" stroke="rgba(180,80,40,0.8)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="localwalks__text-container">
+        <div class="localwalks__text-header">
+          <svg viewBox="0 0 40 40" fill="none" class="localwalks__item-icon"><path d="M8 24 L20 12 L32 24" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="12" y="24" width="16" height="12" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          <h3 class="localwalks__walk-title">Local Places</h3>
+        </div>
+        <p class="localwalks__walk-desc">Discover quiet corners, old villages and timeless spots that make this place truly special.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     GROUPS SECTION
+════════════════════════════════════════════════ -->
+<section class="grp" id="schools">
+  <svg class="grp__botanical grp__botanical--tl" viewBox="0 0 160 350" fill="none">
+    <path d="M-20 300 Q40 220 30 140 Q20 80 50 10" stroke="rgba(196,165,90,0.15)" stroke-width="1.2" fill="none"/>
+    <ellipse cx="60" cy="40" rx="15" ry="6" transform="rotate(-30 60 40)" stroke="rgba(196,165,90,0.12)" stroke-width="0.8" fill="none"/>
+  </svg>
+
+  <div class="grp__top">
+    <div class="grp__top-left">
+      <h2 class="grp__heading reveal">NOT JUST TRIPS.<br>SHARED EXPERIENCES<br>THAT <span class="grp__gold">BUILD CONNECTIONS.</span></h2>
+      <div class="grp__divider reveal" data-delay="0.1" aria-hidden="true">
+        <svg viewBox="0 0 100 20" fill="none"><path d="M5 10 Q25 5 45 10 T95 10" stroke="rgba(196,165,90,0.6)" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <p class="grp__body reveal" data-delay="0.2">Waylo designs immersive journeys for teams, schools and private groups. From sunrise treks and local walks to cultural experiences and custom adventures, every itinerary is crafted to create meaningful memories together.</p>
+    </div>
+    <div class="grp__photo-wrap reveal" data-delay="0.15">
+      <svg class="grp__photo-outline" viewBox="0 0 100 120" preserveAspectRatio="none">
+        <rect x="1" y="1" width="98" height="118" rx="2" ry="2.5" stroke="rgba(196,165,90,0.6)" stroke-width="0.8" fill="none"/>
+      </svg>
+      <div class="grp__photo">
+        <img src="assets/images/group_meadow.png" alt="Group sitting together in mountain meadow"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="grp__cols reveal" data-delay="0.3">
+    <div class="grp__col">
+      <div class="grp__col-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="16" width="28" height="18" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M14 16 L14 10 C14 8 26 8 26 10 L26 16" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+      </div>
+      <h3 class="grp__col-title">FOR CORPORATES</h3>
+      <ul class="grp__col-list">
+        <li>Team bonding beyond conference rooms</li>
+        <li>Leadership &amp; collaboration experiences</li>
+        <li>Nature-driven retreats and offsites</li>
+      </ul>
+    </div>
+    <div class="grp__vdivider" aria-hidden="true"></div>
+    <div class="grp__col">
+      <div class="grp__col-icon">
+        <svg viewBox="0 0 40 40" fill="none"><path d="M20 6 L20 18" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M14 18 L26 18 L26 34 L14 34 Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+      </div>
+      <h3 class="grp__col-title">FOR EDUCATIONAL<br>INSTITUTIONS</h3>
+      <ul class="grp__col-list">
+        <li>Experiential learning</li>
+        <li>Cultural immersion</li>
+        <li>Outdoor confidence building</li>
+      </ul>
+    </div>
+    <div class="grp__vdivider" aria-hidden="true"></div>
+    <div class="grp__col">
+      <div class="grp__col-icon">
+        <svg viewBox="0 0 40 40" fill="none"><circle cx="12" cy="14" r="4" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="28" cy="14" r="4" stroke="currentColor" stroke-width="1.2" fill="none"/><circle cx="20" cy="10" r="4.5" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M6 30 C6 24 18 24 18 30" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M22 30 C22 24 34 24 34 30" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+      </div>
+      <h3 class="grp__col-title">CUSTOM TRIPS</h3>
+      <ul class="grp__col-list">
+        <li>Fully personalized itineraries</li>
+        <li>Local hosts and hidden gems</li>
+        <li>Designed around your group's interests</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Polaroids -->
+  <div class="grp__polaroids-container reveal" data-delay="0.4">
+    <div class="grp__polaroids">
+      <div class="grp__polaroid" style="--rot:-4deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_teamchai.png" alt="Team chai"/></div>
+        <p class="grp__polaroid-caption">Team chai, better than any meeting.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:2deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_classroom.png" alt="Classroom"/></div>
+        <p class="grp__polaroid-caption">Learning beyond classrooms.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:-3deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/trekpe_maggi.png" alt="Maggi"/></div>
+        <p class="grp__polaroid-caption">Trek. Maggi. Memories.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:-1deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_cyclists.png" alt="Cyclists"/></div>
+        <p class="grp__polaroid-caption">Different roads. Same spirit.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:2deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_localguide.png" alt="Local guide"/></div>
+        <p class="grp__polaroid-caption">Stories that shaped the soil.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:-2deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_groupcelebrate.png" alt="Celebration"/></div>
+        <p class="grp__polaroid-caption">Stronger together. Higher together.</p>
+      </div>
+      <div class="grp__polaroid" style="--rot:3deg">
+        <div class="grp__tape"></div>
+        <div class="grp__polaroid-img"><img src="assets/images/polaroid_localwoman.png" alt="Local woman"/></div>
+        <p class="grp__polaroid-caption">Real people. Real connections.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grp__footer reveal" data-delay="0.6">
+    <div class="grp__quote-wrap">
+      <span class="grp__qmark">"</span>
+      <p class="grp__quote-text">The best teams aren't built in meeting rooms. They're built through shared stories.<span class="grp__qmark grp__qmark-close">"</span></p>
+    </div>
+    <div class="grp__footer-divider"></div>
+    <div class="grp__signoff">
+      <p class="grp__signoff-name">Waylo</p>
+      <p class="grp__signoff-sub">Walk together. Grow together.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     GALLERY
+════════════════════════════════════════════════ -->
+<section class="gallery">
+  <svg class="gallery__topo" viewBox="0 0 1000 1000" fill="none" preserveAspectRatio="none">
+    <path d="M0,200 Q200,300 400,100 T800,200 T1000,50" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none"/>
+    <path d="M0,250 Q200,350 400,150 T800,250 T1000,100" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none"/>
+    <path d="M0,300 Q200,400 400,200 T800,300 T1000,150" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="gallery__header">
+    <div class="gallery__eyebrow-wrap reveal">
+      <span class="gallery__eyebrow">GALLERY</span>
+      <div class="gallery__eyebrow-line"></div>
+      <span class="gallery__eyebrow-icon">🌿</span>
+    </div>
+    <h2 class="gallery__title reveal" data-delay="0.1">Moments From The Trail</h2>
+    <p class="gallery__subtitle reveal" data-delay="0.2">Not staged. Not scripted. Just stories collected along the way.</p>
+  </div>
+
+  <div class="gallery__card reveal" data-delay="0.3">
+    <div class="gallery__grid">
+      <div class="gallery__col-left">
+        <div class="gallery__item">
+          <div class="gallery__img-wrap gallery__img-wrap--tall"><img src="assets/images/campfire_night.png" alt="Campfire at night"/></div>
+          <p class="gallery__caption">2:17 AM — Trek Pe Maggi</p>
+          <div class="gallery__caption-line"></div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img-wrap gallery__img-wrap--wide"><img src="assets/images/night_highway.png" alt="Motorcycles"/></div>
+          <p class="gallery__caption">Different roads. Same spirit.</p>
+          <div class="gallery__caption-line"></div>
+        </div>
+      </div>
+      <div class="gallery__col-right">
+        <div class="gallery__item">
+          <div class="gallery__img-wrap gallery__img-wrap--hero"><img src="assets/images/group_mountain.png" alt="Sunrise at Kodachadri"/></div>
+          <p class="gallery__caption">Sunrise at Kodachadri</p>
+          <div class="gallery__caption-line"></div>
+        </div>
+        <div class="gallery__row-mid">
+          <div class="gallery__item">
+            <div class="gallery__img-wrap gallery__img-wrap--sq"><img src="assets/images/pahad_chai.png" alt="Chai"/></div>
+            <p class="gallery__caption">Stories over chai</p>
+            <div class="gallery__caption-line"></div>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__img-wrap gallery__img-wrap--vert"><img src="assets/images/stone_village.png" alt="Village lanes"/></div>
+            <p class="gallery__caption">Lost in local lanes</p>
+            <div class="gallery__caption-line"></div>
+          </div>
+          <div class="gallery__item">
+            <div class="gallery__img-wrap gallery__img-wrap--vert"><img src="assets/images/mountain_village.png" alt="Local wisdom"/></div>
+            <p class="gallery__caption">Local stories, timeless wisdom</p>
+            <div class="gallery__caption-line"></div>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__img-wrap gallery__img-wrap--hero"><img src="assets/images/local_food.png" alt="Local flavours"/></div>
+          <p class="gallery__caption">Local flavours. Real bites.</p>
+          <div class="gallery__caption-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <svg class="contact__botanical-left" viewBox="0 0 160 300" fill="none" aria-hidden="true">
+    <path d="M30 280 Q60 180 100 100 Q120 50 140 10" stroke="rgba(196,165,90,0.12)" stroke-width="1.5" fill="none"/>
+    <ellipse cx="140" cy="10" rx="22" ry="10" transform="rotate(-45 140 10)" stroke="rgba(196,165,90,0.1)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="contact__inner">
+    <div class="contact__info reveal">
+      <p class="section-label">GET IN TOUCH</p>
+      <h2 class="contact__title">Request a<br>Free Quote</h2>
+      <p class="contact__body">Ready to explore with Waylo? Fill in the details and our team will get back to you within 2 hours.</p>
+      <div class="contact__details">
+        <a href="tel:+18005551234" class="contact__detail" id="contact-phone">
+          <span class="contact__detail-icon">📞</span><span>+1 (800) 555-1234</span>
+        </a>
+        <a href="mailto:hello@waylo.in" class="contact__detail" id="contact-email">
+          <span class="contact__detail-icon">✉️</span><span>hello@waylo.in</span>
+        </a>
+        <div class="contact__detail" id="contact-address">
+          <span class="contact__detail-icon">📍</span><span>India — Pan India Experiences</span>
+        </div>
+      </div>
+      <div class="contact__socials">
+        <a href="#" class="contact__social" id="contact-social-linkedin">LinkedIn</a>
+        <a href="#" class="contact__social" id="contact-social-facebook">Facebook</a>
+        <a href="#" class="contact__social" id="contact-social-instagram">Instagram</a>
+      </div>
+    </div>
+
+    <div class="contact__form-wrapper reveal" data-delay="0.3">
+      <div class="contact__success" id="contact-success" style="display:none">
+        <div class="contact__success-icon">✦</div>
+        <h3>Quote Request Sent!</h3>
+        <p>Our team will reach out within 2 hours. Thank you for choosing Waylo.</p>
+      </div>
+      <form class="contact__form" id="contact-form" novalidate>
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <label for="form-name">Full Name</label>
+            <input id="form-name" name="name" type="text" placeholder="John Smith" required/>
+          </div>
+          <div class="contact__field">
+            <label for="form-email">Email</label>
+            <input id="form-email" name="email" type="email" placeholder="john@company.com" required/>
+          </div>
+        </div>
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <label for="form-pickup">Pickup Location</label>
+            <input id="form-pickup" name="pickup" type="text" placeholder="Chicago, IL"/>
+          </div>
+          <div class="contact__field">
+            <label for="form-delivery">Delivery Location</label>
+            <input id="form-delivery" name="delivery" type="text" placeholder="Los Angeles, CA"/>
+          </div>
+        </div>
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <label for="form-cargo">Cargo Type</label>
+            <select id="form-cargo" name="cargoType">
+              <option value="">Select type...</option>
+              <option>Full Truckload (FTL)</option>
+              <option>Less-than-Truckload (LTL)</option>
+              <option>Refrigerated Freight</option>
+              <option>Flatbed / Oversized</option>
+              <option>Expedited</option>
+              <option>Hazmat</option>
+            </select>
+          </div>
+          <div class="contact__field">
+            <label for="form-weight">Estimated Weight (lbs)</label>
+            <input id="form-weight" name="weight" type="number" placeholder="e.g. 10000"/>
+          </div>
+        </div>
+        <div class="contact__field">
+          <label for="form-date">Preferred Pickup Date</label>
+          <input id="form-date" name="date" type="date"/>
+        </div>
+        <div class="contact__field">
+          <label for="form-message">Additional Notes</label>
+          <textarea id="form-message" name="message" rows="3" placeholder="Special handling requirements, etc."></textarea>
+        </div>
+        <button type="submit" class="contact__submit" id="contact-submit-btn">Request Quote <span>→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="footer">
+  <svg class="footer__botanical-top" viewBox="0 0 1200 80" fill="none" aria-hidden="true">
+    <path d="M0 80 Q300 20 600 40 Q900 60 1200 10 L1200 0 L0 0 Z" fill="rgba(196,165,90,0.04)"/>
+    <path d="M0 80 Q300 40 600 60 Q900 75 1200 30" stroke="rgba(196,165,90,0.1)" stroke-width="1" fill="none"/>
+  </svg>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <span class="footer__logo-text">waylo</span><span class="footer__logo-dot">.</span>
+      </div>
+      <p class="footer__tagline"><em>Walk together. Grow together.</em></p>
+      <p class="footer__desc">Immersive travel experiences across India. Local walks, treks, group journeys and authentic connections.</p>
+      <div class="footer__certifications">
+        <span class="footer__cert">Locally Guided</span>
+        <span class="footer__cert">Small Groups</span>
+        <span class="footer__cert">Pan India</span>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__col-heading">Experiences</h4>
+      <ul class="footer__col-links">
+        <li><a href="#experiences" class="footer__link">June Itineraries</a></li>
+        <li><a href="#trekpe-maggi" class="footer__link">Trek Pe Maggie</a></li>
+        <li><a href="#local-walks" class="footer__link">Local Walks</a></li>
+        <li><a href="#schools" class="footer__link">Group Trips</a></li>
+        <li><a href="#experiences" class="footer__link">Pahad Pe Chai</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__col-heading">Company</h4>
+      <ul class="footer__col-links">
+        <li><a href="#about" class="footer__link">About Waylo</a></li>
+        <li><a href="#local-hosts" class="footer__link">Local Hosts</a></li>
+        <li><a href="#schools" class="footer__link">Corporates</a></li>
+        <li><a href="#contact" class="footer__link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__col-heading">Legal</h4>
+      <ul class="footer__col-links">
+        <li><a href="#" class="footer__link" id="footer-privacy-policy">Privacy Policy</a></li>
+        <li><a href="#" class="footer__link" id="footer-terms-of-service">Terms of Service</a></li>
+        <li><a href="#" class="footer__link" id="footer-refund-policy">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2025 Waylo. All rights reserved.</p>
+    <p class="footer__sign"><em>Because the best journeys are not measured in miles, but in moments that make you feel alive.</em></p>
+    <p class="footer__sign-name">Waylo<span class="amber">.</span></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
